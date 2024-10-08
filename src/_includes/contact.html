@@ -15,32 +15,31 @@
           <input type="hidden" name="firstName" value="" />
           <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
           <div class="row">
-            <div class="col-md-6 my-2">
-              <div class="form-group has-feedback ">
-                <input type="text" class="form-control " id="firstname" name="firstname" value="" placeholder="Prenom">
-              </div>
+            <div class="col-sm-12">
+                <div class="form-group has-feedback ">
+                    <input type="text" class="form-control " id="lastname" name="lastname" value=""
+                        placeholder="Nom">
+                </div>
             </div>
-            <div class="col-md-6 my-2">
-              <div class="form-group has-feedback ">
-                <input type="text" class="form-control " id="lastname" name="lastname" value="" placeholder="Nom">
-              </div>
+            <div class="col-sm-12">
+                <div class="form-group has-feedback ">
+                    <input type="text" class="form-control " id="email" name="email" value=""
+                        placeholder="E-mail">
+                </div>
             </div>
-            <div class="col-md-6 my-2">
-              <div class="form-group has-feedback ">
-                <input type="text" class="form-control " id="email" name="email" value="" placeholder="E-mail">
-              </div>
+            <div class="col-sm-12">
+                <div class="form-group has-feedback ">
+                    <input type="text" name="subject" id="form_subject" value="" class="form-control"
+                        placeholder="Sujet">
+                </div>
             </div>
-            <div class="col-md-6 my-2">
-              <div class="form-group has-feedback ">
-                <input type="text" class="form-control " id="phone" name="phone" value="" placeholder="Téléphone">
-              </div>
+            <div class="col-sm-12">
+                <div class="form-group has-feedback ">
+                    <textarea rows="6" name="message" class="form-control" id="message"
+                        placeholder="Message"></textarea>
+                </div>
             </div>
-            <div class="col-md-12 my-2">
-              <div class="form-group has-feedback ">
-                <textarea name="message" id="form_message" class="form-control h-100" rows="5" placeholder="Message"></textarea>
-              </div>
-            </div>
-          </div>
+        </div>
 
       <div class="div01"></div>
       <div class="row ">
@@ -64,7 +63,9 @@
             <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
           </div>
           <br><br>
-          <button type="submit" name="precontact" class="button3"> Envoyer </button>
+          <button type="submit" name="precontact" class="button2">
+            Envoyer
+        </button>
         </div>
       </div>
 

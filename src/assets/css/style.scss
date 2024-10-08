@@ -1361,8 +1361,8 @@ section.slider {
 
 
 .h1, h1 {
-  font-family: "Lato", sans-serif;
-  font-size: 3.6rem;
+  font-family: "Lato", sans-serif !important;
+  font-size: 3.6rem !important;
 }
 
 section.style1 {
@@ -1385,6 +1385,59 @@ section.style2 {
 section.style2 h2 {
   color: #fff;
 }
+
+
+section span {
+  line-height: 1.18421 !important;
+  font-size: 3.8rem !important;
+  font-weight: 700;
+  color: #434345;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: capitalize;
+}
+
+
+.form-horizontal .checkbox, .form-horizontal .checkbox-inline, .form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .radio-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: .7rem;
+}
+
+
+.h5, h5 {
+  font-size: 1.4rem !important;
+}
+
+section.seo {
+  padding: 7rem 0 7rem;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+section.seo h2 {
+  font-size: 3.6rem !important;
+}
+
+
+a {
+  color: #428bca !important;
+  text-decoration: none !important;
+
+  &:hover{
+    text-decoration: none !important;
+    color: var(--color-secondary) !important;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
 
 
 

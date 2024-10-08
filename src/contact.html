@@ -1,34 +1,56 @@
 ---
 layout: default
 permalink: /contact
-title: Contactez-nous | Agence funéraire Lebaron | 01 60 15 19 15
-description: Contactez-nous pour des services funéraires en Ile-de-France. Notre équipe attentionnée est à votre écoute pour vous accompagner dans cette dure période !
+title:
+description:
 keywords: Contactez nous
 ---
 
-<section class="five">
+
+<section class="infos">
   <div class="container">
-    <h1><span>Notre équipe est à votre disposition</span><br><br>Contactez-nous !</h1>
-    <div class="pad20"></div>
     <div class="row">
-      <div class="col-md-4 my-2">
-        <div class="bg-gray pad02">
-          <h3>Nos coordonnées</h3>
-          <div class="pad10"></div>
-          <div class="infos">
-            <p>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              153 route Corbeil 91700 Sainte Geneviève des Bois
-            </p>
-            <p><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:0160151915">01 60 15 19 15</a></p>
-            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a
-                href="mailto:agence.sgdb@lebaronfuneraire.fr">agence.sgdb@lebaronfuneraire.fr</a></p>
-          </div>
+      <div class="col-sm-3">
+        <div class="icon">
+          <i class="fa fa-phone" aria-hidden="true"></i>
         </div>
+        <h4>Téléphone</h4>
+        <a href="tel:0185537895">
+          01 85 53 78 95 </a>
       </div>
-      <div class="col-md-8 my-2">
-        <h3>Formulaire de contact</h3>
-        <form class="form contact_content-form" id="contactForm" method="post" action="{{ site.data.company.url.notify }}">
+      <div class="col-sm-3">
+        <div class="icon">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <h4>Email</h4>
+        <a href="mailto:cfv.commercial@orange.fr">
+          cfv.commercial@orange.fr </a>
+      </div>
+      <div class="col-sm-3">
+        <div class="icon">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
+        <h4>Adresse</h4>
+        77000 <p></p>
+      </div>
+      <div class="col-sm-3">
+        <div class="icon">
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+        <h4>Horaires d’ouverture </h4>
+        <p>lun – ven de 9h à 18h </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact">
+  <div class="container">
+    <h2 class="text-center">Contactez-nous </h2>
+    <div class="divider"></div>
+    <div class="row">
+      <div class="col-sm-6">
+        <form class="form contact_content-form" id="contactForm" method="post"
+          action="{{ site.data.company.url.notify }}">
           <input type="hidden" name="lang" value="fr" />
           <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
           <input type="hidden" name="type" value="contact" />
@@ -37,59 +59,76 @@ keywords: Contactez nous
           <input type="hidden" name="firstName" value="" />
           <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
           <div class="row">
-            <div class="col-sm-4">
+
+            <br>
+            <div class="col-sm-6">
               <div class="form-group has-feedback ">
-                <label for="lastname">Nom</label>
-                <input type="text" class="form-control " id="lastname" name="lastname" value="">
+                <input type="text" class="form-control " id="firstname" name="firstname" value="" placeholder="Prenom">
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
               <div class="form-group has-feedback ">
-                <label for="email">E-mail</label>
-                <input type="text" class="form-control " id="email" name="email" value="">
+                <input type="text" class="form-control " id="lastname" name="lastname" value="" placeholder="Nom">
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
               <div class="form-group has-feedback ">
-                <label for="phone">Téléphone</label>
-                <input type="text" class="form-control " id="phone" name="phone" value="">
+                <input type="text" class="form-control " id="email" name="email" value="" placeholder="E-mail">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group has-feedback ">
+                <input type="text" class="form-control " id="phone" name="phone" value="" placeholder="Téléphone">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group has-feedback ">
+                <textarea name="message" id="form_message" class="form-control" rows="8"
+                  placeholder="Message"></textarea>
+              </div>
+            </div>
+
+          </div>
+          <div class="row ">
+            <div class="col-xs-12 text-center">
+              <div class="row justify-content-center">
+                <div class="checkbox d-flex mb-5 mx-5 justify-content-center">
+                  <input name="condition" type="checkbox"
+                    style="height:1.5rem; text-align: left; width:1.5rem; vertical-align: middle; margin-right: 1rem; margin-left: 1rem;" />
+                  <span class="contact_content-form--label" style="font-size: 1.2rem; color: #000;">
+                    En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                    de vos données par ce site * <a href="#" data-toggle="modal" class="link"
+                      data-target="#modal-rgpd"><i class="fa fa-info-circle"></i></a></span>
+                  <i class="fa fa-info-square" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div id="contact-form-response"></div>
+              <div class="form-group d-flex justify-content-center">
+                <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                </div>
+                <br />
+                <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
               </div>
             </div>
           </div>
 
-          <div class="form-group has-feedback ">
-            <label for="message">Message</label>
-            <textarea rows="6" name="message" class="form-control h-100" id="message"></textarea>
-          </div>
-          <br>
-
-          <div class="row justify-content-center">
-            <div class="checkbox d-flex mb-5 justify-content-center">
-              <input name="condition" type="checkbox"
-                style="height:1.5rem; width:1.5rem; vertical-align: middle; margin-right: 1rem;" />
-              <span class="contact_content-form--label" style="font-size: 1.4rem; color: #000;">
-                En utilisant ce formulaire, vous acceptez le stockage et la gestion
-                de vos données par ce site * <a href="#" data-toggle="modal" class="link" data-target="#modal-rgpd"><i
-                    class="fa fa-info-circle"></i></a></span>
-              <i class="fa fa-info-square" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div id="contact-form-response"></div>
-          <div class="form-group d-flex justify-content-center">
-            <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
-            </div>
-            <br />
-            <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
-          </div>
-          <div class="d-flex justify-content-center">
-            <button type="submit" class="button form-submit" value="Submit">Envoyer</button>
-          </div>
+          <div class="buttondevis text-center">
+            <button type="submit" name="contact" class="button2">Envoyer</button>
           </div>
         </form>
+      </div>
+      <div class="col-sm-6">
+        <img src="./assets/img/gallery/100-extension1.jpg" class="img img-responsive"
+          style="border-radius: 15px; max-width: 500px;margin-top:28px;">
       </div>
     </div>
   </div>
 </section>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84559.62344716444!2d2.611321145649459!3d48.52387445720931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5f0a6eb5ab7b5%3A0x1c0b82c6e1d85aa0!2s77000+Melun%2C+France!5e0!3m2!1sfr!2sma!4v1532092462003"
+  width="100%" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+
+
 
 
 <div class="modal fade" id="modal-rgpd" tabindex="-1" role="dialog" aria-labelledby="modal-rgpd-label"
@@ -98,11 +137,16 @@ keywords: Contactez nous
     <div class="modal-content">
       <div class="modal-body"> * En cochant cette case, j’accepte que mes données personnelles soient collectées et
         traitées par le service commercial de Agence Funéraire LEBARON 93. Leur traitement a pour finalité de traiter
-        votre demande spécifique.<br> Les données collectées sont conservées pour la durée de nos relations commerciales
-        + 1 an. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d’accès aux données
-        vous concernant et les faire rectifier auprès de notre référent à <a class="link" href="mailto:gagence.sgdb@lebaronfuneraire.fr">agagence.sgdb@lebaronfuneraire.fr</a>.<br> Vous disposez également d’un droit
+        votre demande spécifique.<br> Les données collectées sont conservées pour la durée de nos relations
+        commerciales
+        + 1 an. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d’accès aux
+        données
+        vous concernant et les faire rectifier auprès de notre référent à <a class="link"
+          href="mailto:gagence.sgdb@lebaronfuneraire.fr">agagence.sgdb@lebaronfuneraire.fr</a>.<br> Vous disposez
+        également d’un droit
         de rectification, à l’oubli, à la portabilité, de limitation ou d’opposition auprès de notre référent à <a
-          href="mailto:agagence.sgdb@lebaronfuneraire.fr" class="link">agence.sgdb@lebaronfuneraire.fr</a>.<br><br> En dernier recours,
+          href="mailto:agagence.sgdb@lebaronfuneraire.fr" class="link">agence.sgdb@lebaronfuneraire.fr</a>.<br><br> En
+        dernier recours,
         vous pouvez déposer une réclamation auprès de la CNIL. </div>
       <div class="modal-footer">
         <div class="form-group text-center"> <button type="button" class="btn btn-default btn-primary btn-modal"
