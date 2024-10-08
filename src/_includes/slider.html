@@ -28,7 +28,7 @@
         </div>
       </div> -->
   </section>
-  
+
   <!-- <div class="header">
     <div data-video="rWydEGpEGCU" class="header__video js-background-video">
         <div class="header__background">
@@ -47,17 +47,17 @@
         </div>
     </div>
   </div> -->
-  
-  
+
+
   <section class="slider2">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-12">
           <div class="slider_content">
-            <h1 class="slider_content-title">CFV Véranda, le spécialiste des vérandas dans le 95 et partout en
-              Île-de-France</h1>
+            <h1 class="slider_content-title">Votre devis gratuit ! Chez véranda 77</h1>
             <br>
-            <form class="form contact_content-form" id="contactForm" method="post" action="{{ site.data.company.url.notify }}">
+            <form class="form contact_content-form" id="contactForm" method="post"
+              action="{{ site.data.company.url.notify }}">
               <input type="hidden" name="lang" value="fr" />
               <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
               <input type="hidden" name="type" value="contact" />
@@ -66,73 +66,57 @@
               <input type="hidden" name="firstName" value="" />
               <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
               <div class="row">
-                <div class="col-md-6 col-sm-12 my-2">
+
+                <div class="col-sm-3">
                   <div class="form-group has-feedback ">
-                    <!--      <label for="form_lastname">Nom</label><br/> -->
-                    <input type="text" name="lastname" id="form_lastname" value="" class="form-control br"
+                    <label class="label" for="form_lastname">Nom</label><br>
+                    <input type="text" name="lastname" id="form_lastname" value="" class="form-control"
                       placeholder="Nom &amp; prénom ">
                   </div>
                 </div>
-                <div class=" col-md-6 col-sm-12 my-2">
+
+
+                <div class="col-sm-3">
                   <div class="form-group has-feedback ">
-                    <!--   <label for="form_phone">Téléphone</label> -->
-                    <input type="text" name="phone" id="form_phone" value="" class="form-control br" placeholder="Téléphone">
+                    <label class="label" for="form_phone">Téléphone</label>
+                    <input type="text" name="phone" id="form_phone" value="" class="form-control"
+                      placeholder="Téléphone">
                   </div>
                 </div>
-                <div class=" col-md-6 col-sm-12 my-2 form-pseudo">
+
+                <!--  <div class="col-sm-3">
+                            <div class=" padl form-group has-feedback ">
+                                 <label class="label" for="form_email"></label><br/> 
+                                <input type="text" name="email" id="form_email" value="" class="form-control " placeholder="text@exemple.fr" >                                                            </div>
+                        </div> -->
+                <div class="col-sm-3">
                   <div class="form-group has-feedback ">
-                    <!--   <label for="form_pseudo"></label> -->
-                    <input type="text" name="pseudo" id="form_pseudo" value="" class="form-control br" placeholder="pseudo">
+                    <label class="label" for="form_zipcode">Code postal</label> <input type="text" name="zipcode" id="form_zipcode"
+                      value="" class="form-control" placeholder="75001">
                   </div>
                 </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class=" padl form-group has-feedback ">
-                    <!--   <label for="form_email">E-mail</label><br/> -->
-                    <input type="text" name="email" id="form_email" value="" class="form-control br"
-                      placeholder="text@exemple.fr">
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
+
+                <div class="col-sm-3" style="padding-right: 0px;">
                   <div class="form-group has-feedback ">
-                    <!--  <label for="form_zipcode">Code postal</label> -->
-                    <input type="text" name="zipcode" id="form_zipcode" value="" class="form-control br" placeholder="75001">
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <select name="select1" id="form_select1" class="form-control br">
-                      <option> Type de projet :</option>
-                      <option>Véranda classique </option>
-                      <option>Véranda toiture plate</option>
-                      <option>Pergolas </option>
+                    <label class="label">Dimension véranda</label>
+                    <select name="select2" id="form_select2" class="form-control">
+                      <option>------</option>
+                      <option>Moins de 20m² </option>
+                      <option>De 20 à 30 m²</option>
+                      <option>Plus de 30m² </option>
                     </select>
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <select name="select2" id="form_select2" class="form-control br">
-                      <option>Dimension :</option>
-                      <option>Inférieur à 20m²</option>
-                      <option>De 20 à 30m²</option>
-                      <option>Supérieur à 30m² </option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <textarea name="message" id="form_message" class="form-control br" rows="8"
-                      placeholder="Message"></textarea>
                   </div>
                 </div>
               </div>
+              <br>
               <div class="row justify-content-center">
                 <div class="checkbox d-flex mb-2 justify-content-center">
                   <input name="condition" type="checkbox"
                     style="height:1.5rem; width:1.5rem; vertical-align: middle; margin-right: 1rem; margin-left: 1rem;" />
-                  <span class="contact_content-form--label" style="font-size: 1.4rem; color: #fff;">
+                  <span class="contact_content-form--label" style="font-size: 1.4rem !important; font-weight: 400 !important; color: #fff;">
                     En utilisant ce formulaire, vous acceptez le stockage et la gestion
-                    de vos données par ce site * <a href="#" data-toggle="modal" class="link" data-target="#modal-rgpd"><i
-                        class="fa fa-info-circle"></i></a></span>
+                    de vos données par ce site * <a href="#" data-toggle="modal" class="link"
+                      data-target="#modal-rgpd"><i class="fa fa-info-circle"></i></a></span>
                   <i class="fa fa-info-square" aria-hidden="true"></i>
                 </div>
               </div>
@@ -143,9 +127,9 @@
                 <br />
                 <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
               </div>
-  
+
               <div class="d-flex justify-content-center">
-                <button type="submit" class="button1 form-submit" value="Submit">Envoyer</button>
+                <button type="submit" class="button2 form-submit" value="Submit">Envoyer</button>
               </div>
               <br>
             </form>
@@ -154,7 +138,7 @@
       </div>
     </div>
   </section>
-  
+
 </div>
 
 
@@ -165,101 +149,85 @@
       <div class="row align-items-center">
         <div class="col-md-12">
           <div class="">
-            <h1 class="slider_content-title">CFV Véranda, le spécialiste des vérandas dans le 95 et partout en
-              Île-de-France</h1>
+            <h1 class="slider_content-title">Votre devis gratuit ! Chez véranda 77</h1>
             <br>
-            <form class="form contact_content-form" id="contactForm" method="post" action="{{ site.data.company.url.notify }}">
-              <input type="hidden" name="lang" value="fr" />
-              <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
-              <input type="hidden" name="type" value="contact" />
-              <input type="hidden" name="website" value="{{ site.data.company.website }}" />
-              <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
-              <input type="hidden" name="firstName" value="" />
-              <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
-              <div class="row">
-                <div class="col-md-6 col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <!--      <label for="form_lastname">Nom</label><br/> -->
-                    <input type="text" name="lastname" id="form_lastname" value="" class="form-control br"
-                      placeholder="Nom &amp; prénom ">
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <!--   <label for="form_phone">Téléphone</label> -->
-                    <input type="text" name="phone" id="form_phone" value="" class="form-control br" placeholder="Téléphone">
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2 form-pseudo">
-                  <div class="form-group has-feedback ">
-                    <!--   <label for="form_pseudo"></label> -->
-                    <input type="text" name="pseudo" id="form_pseudo" value="" class="form-control br" placeholder="pseudo">
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class=" padl form-group has-feedback ">
-                    <!--   <label for="form_email">E-mail</label><br/> -->
-                    <input type="text" name="email" id="form_email" value="" class="form-control br"
-                      placeholder="text@exemple.fr">
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <!--  <label for="form_zipcode">Code postal</label> -->
-                    <input type="text" name="zipcode" id="form_zipcode" value="" class="form-control br" placeholder="75001">
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <select name="select1" id="form_select1" class="form-control br">
-                      <option> Type de projet :</option>
-                      <option>Véranda classique </option>
-                      <option>Véranda toiture plate</option>
-                      <option>Pergolas </option>
-                    </select>
-                  </div>
-                </div>
-                <div class=" col-md-6 col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <select name="select2" id="form_select2" class="form-control br">
-                      <option>Dimension :</option>
-                      <option>Inférieur à 20m²</option>
-                      <option>De 20 à 30m²</option>
-                      <option>Supérieur à 30m² </option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-12 my-2">
-                  <div class="form-group has-feedback ">
-                    <textarea name="message" id="form_message" class="form-control br" rows="8"
-                      placeholder="Message"></textarea>
-                  </div>
+            <form class="form contact_content-form" id="contactForm" method="post"
+            action="{{ site.data.company.url.notify }}">
+            <input type="hidden" name="lang" value="fr" />
+            <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+            <input type="hidden" name="type" value="contact" />
+            <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+            <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+            <input type="hidden" name="firstName" value="" />
+            <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
+            <div class="row">
+
+              <div class="col-sm-3">
+                <div class="form-group has-feedback ">
+                  <label class="label" for="form_lastname">Nom</label><br>
+                  <input type="text" name="lastname" id="form_lastname" value="" class="form-control"
+                    placeholder="Nom &amp; prénom ">
                 </div>
               </div>
-              <div class="row justify-content-center">
-                <div class="checkbox d-flex mb-2 justify-content-center">
-                  <input name="condition" type="checkbox"
-                    style="height:1.5rem; width:1.5rem; vertical-align: middle; margin-right: 1rem; margin-left: 1rem;" />
-                  <span class="contact_content-form--label" style="font-size: 1.4rem; color: #fff;">
-                    En utilisant ce formulaire, vous acceptez le stockage et la gestion
-                    de vos données par ce site * <a href="#" data-toggle="modal" class="link" data-target="#modal-rgpd"><i
-                        class="fa fa-info-circle"></i></a></span>
-                  <i class="fa fa-info-square" aria-hidden="true"></i>
+
+
+              <div class="col-sm-3">
+                <div class="form-group has-feedback ">
+                  <label class="label" for="form_phone">Téléphone</label>
+                  <input type="text" name="phone" id="form_phone" value="" class="form-control"
+                    placeholder="Téléphone">
                 </div>
               </div>
-              <div id="contact-form-response"></div>
-              <div class="form-group d-flex justify-content-center">
-                <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+
+              <!--  <div class="col-sm-3">
+                          <div class=" padl form-group has-feedback ">
+                               <label class="label" for="form_email"></label><br/> 
+                              <input type="text" name="email" id="form_email" value="" class="form-control " placeholder="text@exemple.fr" >                                                            </div>
+                      </div> -->
+              <div class="col-sm-3">
+                <div class="form-group has-feedback ">
+                  <label class="label" for="form_zipcode">Code postal</label> <input type="text" name="zipcode" id="form_zipcode"
+                    value="" class="form-control" placeholder="75001">
                 </div>
-                <br />
-                <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
               </div>
-  
-              <div class="d-flex justify-content-center">
-                <button type="submit" class="button1 form-submit" value="Submit">Envoyer</button>
+
+              <div class="col-sm-3" style="padding-right: 0px;">
+                <div class="form-group has-feedback ">
+                  <label class="label">Dimension véranda</label>
+                  <select name="select2" id="form_select2" class="form-control">
+                    <option>------</option>
+                    <option>Moins de 20m² </option>
+                    <option>De 20 à 30 m²</option>
+                    <option>Plus de 30m² </option>
+                  </select>
+                </div>
               </div>
-              <br>
-            </form>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+              <div class="checkbox d-flex mb-2 justify-content-center">
+                <input name="condition" type="checkbox"
+                  style="height:1.5rem; width:1.5rem; vertical-align: middle; margin-right: 1rem; margin-left: 1rem;" />
+                <span class="contact_content-form--label" style="font-size: 1.4rem !important; font-weight: 400 !important; color: #fff;">
+                  En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                  de vos données par ce site * <a href="#" data-toggle="modal" class="link"
+                    data-target="#modal-rgpd"><i class="fa fa-info-circle"></i></a></span>
+                <i class="fa fa-info-square" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div id="contact-form-response"></div>
+            <div class="form-group d-flex justify-content-center">
+              <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+              </div>
+              <br />
+              <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="button2 form-submit" value="Submit">Envoyer</button>
+            </div>
+            <br>
+          </form>
           </div>
         </div>
       </div>

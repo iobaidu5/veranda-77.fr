@@ -6,12 +6,11 @@ description:
 keywords: Devis
 ---
 
-<section class="slide1 slide4">
+<section class="banner slide1 slide3">
   <div class="container">
-    <h1>Devis </h1>
+    <h1 style="color:white; font-weight:bold;">Devis</h1>
   </div>
 </section>
-
 <section class="devis one">
   <div class="container to-100-per-768">
     <form class="form contact_content-form" id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
@@ -24,7 +23,7 @@ keywords: Devis
       <div class="row">
         <div class="col-md-5">
           <fieldset>
-            <legend>Coordonnées</legend>
+            <legend class="text-left">Coordonnées</legend>
             <div class="div01"></div>
 
             <div class="row">
@@ -92,23 +91,17 @@ keywords: Devis
         </div>
         <div class="col-md-6 col-md-offset-1">
           <fieldset>
-            <legend>Demande</legend>
+            <legend class="text-left">Demande</legend>
             <div class="div01"></div>
 
             <div class="form-group has-feedback ">
-              <label>Type de projet </label>
+              <label class="l-bold2">Type de projet </label>
 
               <div class="checkbox" style="margin-top: 0;">
-                <label><input type="checkbox" name="checkbox1"> Véranda </label>
+                <label class="l-bold2"><input type="checkbox" name="checkbox1"> &nbsp; Véranda </label>
               </div>
               <div class="checkbox" style="margin-top: 0;">
-                <label><input type="checkbox" name="checkbox2"> Pergola </label>
-              </div>
-              <div class="checkbox" style="margin-top: 0;">
-                <label><input type="checkbox" name="checkbox3"> Rénovation </label>
-              </div>
-              <div class="checkbox" style="margin-top: 0;">
-                <label><input type="checkbox" name="checkbox4"> Autres demandes </label>
+                <label class="l-bold2"><input type="checkbox" name="checkbox2"> &nbsp; Pergola </label>
               </div>
 
             </div>
@@ -137,7 +130,7 @@ keywords: Devis
       <div class="checkbox d-flex mb-5">
         <input name="condition" type="checkbox"
           style="height:2rem; width:2rem; vertical-align: middle; margin-right: 1rem;" />
-        <span class="contact_content-form--label" style="font-size: 1.4rem; color: #000;">
+        <span class="contact_content-form--label" style="font-size: 1.4rem !important; font-weight: 400 !important; color: #000;">
           En utilisant ce formulaire, vous acceptez le stockage et la gestion
           de vos données par ce site * <a href="#" data-toggle="modal" class="link" data-target="#modal-rgpd"><i
               class="fa fa-info-circle"></i></a></span>
@@ -149,7 +142,7 @@ keywords: Devis
         <div id="devis-form-response"></div>
       </div>
       <div class="d-flex justify-content-center">
-        <button type="submit" class="button3 form-submit" value="Submit">Envoyer</button>
+        <button type="submit" class="button2 form-submit" value="Submit">Envoyer</button>
       </div>
     </form>
   </div>
