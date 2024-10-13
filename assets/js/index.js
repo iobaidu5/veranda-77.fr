@@ -107,10 +107,10 @@ $(document).ready(function () {
     dots: true,
     animateIn: "fadeIn",
     animateOut: "fadeOut",
-    // navText: [
-    //   "<i class='fas fa-circle owlNav-left'></i>",
-    //   "<i class='fas fa-circle owlNav-right'></i>",
-    // ],
+    navText: [
+      "<i class='fas fa-circle owlNav-left mx-2'></i>",
+      "<i class='fas fa-circle owlNav-right mx-2'></i>",
+    ],
     responsiveClass: true,
     responsive: {
       100: {
