@@ -143,7 +143,9 @@ header .top a {
 @media only screen and (max-width: 990px) {
   .Navbar_image {
     display: block;
-    margin-right: 0 !important
+    margin-right: 0 !important;
+    margin-top: -.2rem !important
+
   }
 }
 
